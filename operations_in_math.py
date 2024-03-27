@@ -23,3 +23,14 @@ print(a_boolean)
 print(1 == 2)
 
 31 < 40
+
+if(37 < 40):
+    print('37 is less than 40')
+
+age = 31
+if age>35:
+    print('True')
+else:
+    print('False')
+
+#elif is else if
