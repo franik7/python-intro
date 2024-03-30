@@ -144,3 +144,17 @@ with open("movies.json") as movies_file:
 
 # print(data) # prints all the data
 
+line = "this is a line of text"
+normal_flows = ["here", "are", "some", "words", "to", "search", "for", "text"]
+
+for flow in normal_flows:
+    is_in_line = flow in line
+    print(f"{flow} is in line? {is_in_line}")
+
+aggregated_result = any(flow in line for flow in normal_flows)
+print(aggregated_result)
+
+if not any(flow in line for flow in normal_flows):
+    print("none of the words was found in the line")
+else:
+    print("at least one of the words was found in the line")
